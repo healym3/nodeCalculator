@@ -1,0 +1,23 @@
+{
+  "name": "nodecalculator",
+  "version": "1.0.0",
+  "description": "Calculator using Express and NodeJS",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/healym3/nodeCalculator.git"
+  },
+  "author": "MacKenzie Healy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/healym3/nodeCalculator/issues"
+  },
+  "homepage": "https://github.com/healym3/nodeCalculator#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
