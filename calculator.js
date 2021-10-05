@@ -14,6 +14,19 @@ app.post("/", function(req, res){
   res.send("The sum is " + sum + ".");
 });
 
+app.get("/bmicalculator", function(req, res) {
+  res.sendFile(__dirname + '/bmiCalculator.html');
+});
+
+app.post("/bmicalculator", function(req, res){
+  console.log(req.body);
+  var weight = Number(req.body.weight);
+  var height = Number(req.body.height);
+  var bmi = weight / (height * height) * 703;
+  var calculation = bmi.toFixed(2);
+  res.send("Your BMI is " + calculation + ".");
+});
+
 app.listen(port, function(){
   console.log("Starting server on port " + port + "....");
 });
